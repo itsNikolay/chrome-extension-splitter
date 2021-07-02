@@ -18,5 +18,11 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.nytimes.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }

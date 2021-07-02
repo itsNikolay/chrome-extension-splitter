@@ -6,9 +6,13 @@ const config = {
   entry: {
     popup: {
       import: "./src/popup.ts",
-      dependOn: "shared",
     },
-    shared: "lodash",
+    content: {
+      import: "./src/content.ts",
+    },
+    background: {
+      import: "./src/background.ts",
+    },
   },
   output: {
     filename: "[name].js",
