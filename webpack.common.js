@@ -5,7 +5,7 @@ import CopyPlugin from "copy-webpack-plugin";
 const config = {
   entry: {
     popup: {
-      import: "./src/popup.ts",
+      import: "./src/popup.tsx",
     },
     content: {
       import: "./src/content.ts",
@@ -26,7 +26,8 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Development",
-      filename: "[name].html",
+      template: "src/popup.html",
+      filename: "popup.html",
     }),
     new CopyPlugin({
       patterns: [
