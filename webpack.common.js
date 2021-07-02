@@ -3,7 +3,6 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin";
 
 const config = {
-  mode: "development",
   entry: {
     popup: {
       import: "./src/popup.ts",
@@ -17,7 +16,6 @@ const config = {
     publicPath: "/",
     clean: true,
   },
-  devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist",
   },
@@ -28,8 +26,8 @@ const config = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "src/manifest.json", to: "manifest.json" },
-        { from: "src/icons", to: "icons" },
+        { from: "./src/manifest.json", to: "manifest.json" },
+        { from: "./src/icons", to: "icons" },
       ],
     }),
   ],
