@@ -15,5 +15,8 @@
       },
       "description": "Opens hello.html"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }

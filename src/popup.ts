@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styles/style.css";
 // import Icon from "./icon.png";
 
 const component = () => {
@@ -7,7 +7,7 @@ const component = () => {
   // myIcon.src = Icon;
 
   el.innerHTML = "Hello webpack";
-  //   el.classList.add("hello");
+  el.classList.add("hello");
   //   el.appendChild(myIcon);
   return el;
 };

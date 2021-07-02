@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/chrome": "0.0.145",
     "@types/copy-webpack-plugin": "^8.0.0",
     "@types/node": "^15.14.0",
     "@types/webpack": "^5.28.0",
