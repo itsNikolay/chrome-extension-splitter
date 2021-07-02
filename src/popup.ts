@@ -1,10 +1,10 @@
 import "./style.css";
-import Icon from "./icon.png";
+// import Icon from "./icon.png";
 
 const component = () => {
   const el = document.createElement("div");
-  const myIcon = new Image();
-  myIcon.src = Icon;
+  // const myIcon = new Image();
+  // myIcon.src = Icon;
 
   el.innerHTML = "Hello webpack";
   //   el.classList.add("hello");

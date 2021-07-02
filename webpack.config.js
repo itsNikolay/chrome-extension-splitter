@@ -1,5 +1,6 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyPlugin from "copy-webpack-plugin";
 
 const config = {
   mode: "development",
@@ -24,6 +25,14 @@ const config = {
     new HtmlWebpackPlugin({
       title: "Development",
       filename: "[name].html",
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "public",
+          to: "public",
+        },
+      ],
     }),
   ],
   optimization: {
