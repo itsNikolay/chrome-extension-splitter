@@ -28,10 +28,8 @@ const config = {
     }),
     new CopyPlugin({
       patterns: [
-        {
-          from: "public",
-          to: "public",
-        },
+        { from: "src/manifest.json", to: "manifest.json" },
+        { from: "src/icons", to: "icons" },
       ],
     }),
   ],
