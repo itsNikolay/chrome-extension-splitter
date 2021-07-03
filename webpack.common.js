@@ -28,6 +28,7 @@ const config = {
       title: "Development",
       template: "src/popup.html",
       filename: "popup.html",
+      chunks: ["popup"],
     }),
     new CopyPlugin({
       patterns: [
@@ -46,7 +47,7 @@ const config = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.tsx?$/,

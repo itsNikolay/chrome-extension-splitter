@@ -7,12 +7,14 @@ import {
   Link,
   HashRouter
 } from "react-router-dom";
+import Home from "./components/Home";
+import './styles/style.css';
 
 export default function App() {
   return (
     <HashRouter>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -24,15 +26,15 @@ export default function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <Switch>
-          <Route path="/about">
+          {/* <Route path="/about">
             <About />
           </Route>
           <Route path="/users">
             <Users />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home />
           </Route>
@@ -42,16 +44,12 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function About() {
+//   return <h2>About</h2>;
+// }
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
+// function Users() {
+//   return <h2>Users</h2>;
+// }
 
 render(<App />, document.querySelector("#root"));
