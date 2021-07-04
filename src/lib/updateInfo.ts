@@ -22,13 +22,16 @@ const updateData = ({ columns, screen }: Props): Info[] => {
     const rowsAmount = Math.floor(totalWidth / screenWidth)
     const top = rowsAmount * height
 
+    const focused = true
+
     return [
       ...acc,
       {
         width,
         height,
         top,
-        left
+        left,
+        focused
       }
     ]
   }, [] as Info[])

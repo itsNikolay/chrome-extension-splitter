@@ -16,7 +16,8 @@ it('12', () => {
       width: 3000,
       height: 1000,
       top: 0,
-      left: 0
+      left: 0,
+      focused: true
     }
   ]);
 });
@@ -31,13 +32,15 @@ it('6,6', () => {
       width: 1500,
       height: 1000,
       top: 0,
-      left: 0
+      left: 0,
+      focused: true
     },
     {
       width: 1500,
       height: 1000,
       top: 0,
-      left: 1500
+      left: 1500,
+      focused: true
     }
   ]);
 });
@@ -52,13 +55,15 @@ it('3,9', () => {
       width: 750,
       height: 1000,
       top: 0,
-      left: 0
+      left: 0,
+      focused: true
     },
     {
       width: 2250,
       height: 1000,
       top: 0,
-      left: 750
+      left: 750,
+      focused: true
     }
   ]);
 });
@@ -73,13 +78,15 @@ it('9,3', () => {
       width: 2250,
       height: 1000,
       top: 0,
-      left: 0
+      left: 0,
+      focused: true
     },
     {
       width: 750,
       height: 1000,
       top: 0,
-      left: 2250
+      left: 2250,
+      focused: true
     },
   ]);
 });
@@ -94,25 +101,29 @@ it('6,6,6,6', () => {
       width: 1500,
       height: 500,
       top: 0,
-      left: 0
+      left: 0,
+      focused: true
     },
     {
       width: 1500,
       height: 500,
       top: 0,
-      left: 1500
+      left: 1500,
+      focused: true
     },
     {
       width: 1500,
       height: 500,
       top: 500,
-      left: 0
+      left: 0,
+      focused: true
     },
     {
       width: 1500,
       height: 500,
       top: 500,
-      left: 1500
+      left: 1500,
+      focused: true
     },
   ]);
 });

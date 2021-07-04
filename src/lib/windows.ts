@@ -14,19 +14,19 @@ const resizeAllWindow = async (infos: Info[]) => {
   const winds = await getAllWindows()
   const currentWind = await getCurrentWindow()
   const sortedWinds = winds.sort((a, b) => (a?.id === currentWind?.id ? 1 : 0))
+  debugger
 
-  let n = 0;
-  infos.map(async (info) => {
-    const wind = sortedWinds[n]
-    if (!wind) {
-      await createWindow(info)
+
+  const res = infos.map((info, index) => {
+    const wind = sortedWinds[index]
+    if (wind) {
+      return updateWindow(info, wind)
     } else {
-      await updateWindow(info, wind)
+      return createWindow(info)
     }
   })
 
-  for await (let info of infos) {
-  }
+  Promise.all(res)
 }
 
 export {
