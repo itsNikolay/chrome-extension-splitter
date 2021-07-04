@@ -1,15 +1,15 @@
 import React from 'react'
 import { Columns, COLUMN_TYPES } from '../lib/columnsInfo'
 import { updateData } from '../lib/updateInfo'
-import AppWindows from '../lib/windows'
+import { resizeAllWindow } from '../lib/windows'
 
-const onClick = (columns: Columns) => {
+const onClick = async (columns: Columns) => {
   const screen = window.screen
 
   if (!screen) { return }
 
   const data = updateData({ columns, screen })
-  return data.map(AppWindows().resize)
+  return await resizeAllWindow(data)
 }
 
 

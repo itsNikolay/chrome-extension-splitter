@@ -1,38 +1,34 @@
-const AppWindows = () => {
-  const bg = chrome.extension.getBackgroundPage()
-  const screen = bg?.screen
-  const width = screen?.width
-  const height = screen?.height
-  const getAllWindows = chrome.windows.getAll
-  const createWindow = () => {
-    return chrome.windows.create({
+type Info = chrome.windows.UpdateInfo
+type Wind = chrome.windows.Window
 
-    })
-  }
+const getAllWindows = () => chrome.windows.getAll()
 
-  const resize = async (info: chrome.windows.UpdateInfo) => {
-    const currentWindow = await chrome.windows.getCurrent()
-    if (!currentWindow?.id) { return }
+const getCurrentWindow = () => chrome.windows.getCurrent()
 
-    return chrome.windows.update(currentWindow.id, info)
-  }
+const createWindow = (info: Info) => chrome.windows.create(info)
 
-  const calculate = (): chrome.windows.UpdateInfo[] | null => {
-    if (!width) { return null }
+const updateWindow = async (info: Info, wind: Wind) =>
+  wind?.id ? chrome.windows.update(wind.id, info) : null
 
-    const firstWidth = width / 2
-    const secondWidth = width - firstWidth
+const resizeAllWindow = async (infos: Info[]) => {
+  const winds = await getAllWindows()
+  const currentWind = await getCurrentWindow()
+  const sortedWinds = winds.sort((a, b) => (a?.id === currentWind?.id ? 1 : 0))
 
-    return [
-      { width: firstWidth, height },
-      { width: secondWidth, height }
-    ]
-  }
+  let n = 0;
+  infos.map(async (info) => {
+    const wind = sortedWinds[n]
+    if (!wind) {
+      await createWindow(info)
+    } else {
+      await updateWindow(info, wind)
+    }
+  })
 
-  return {
-    calculate,
-    getAllWindows,
-    resize
+  for await (let info of infos) {
   }
 }
-export default AppWindows
+
+export {
+  resizeAllWindow
+}

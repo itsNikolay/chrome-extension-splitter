@@ -14,7 +14,9 @@ it('12', () => {
   expect(res).toEqual([
     {
       width: 3000,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 0
     }
   ]);
 });
@@ -27,11 +29,15 @@ it('6,6', () => {
   expect(res).toEqual([
     {
       width: 1500,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 0
     },
     {
       width: 1500,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 1500
     }
   ]);
 });
@@ -44,11 +50,15 @@ it('3,9', () => {
   expect(res).toEqual([
     {
       width: 750,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 0
     },
     {
       width: 2250,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 750
     }
   ]);
 });
@@ -61,11 +71,15 @@ it('9,3', () => {
   expect(res).toEqual([
     {
       width: 2250,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 0
     },
     {
       width: 750,
-      height: 1000
+      height: 1000,
+      top: 0,
+      left: 2250
     },
   ]);
 });
@@ -78,19 +92,27 @@ it('6,6,6,6', () => {
   expect(res).toEqual([
     {
       width: 1500,
-      height: 500
+      height: 500,
+      top: 0,
+      left: 0
     },
     {
       width: 1500,
-      height: 500
+      height: 500,
+      top: 0,
+      left: 1500
     },
     {
       width: 1500,
-      height: 500
+      height: 500,
+      top: 500,
+      left: 0
     },
     {
       width: 1500,
-      height: 500
+      height: 500,
+      top: 500,
+      left: 1500
     },
   ]);
 });
