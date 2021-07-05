@@ -1,13 +1,8 @@
 import { isHoled, MAX_COLUMNS, MAX_ROWS } from "./columnsInfo";
 import { AppScreen, Column, ExtendedInfo } from "./interfaces";
 
-const appendScreen = (
-  columns: Column[],
-  screen: AppScreen
-): ExtendedInfo[] => columns.map((column) => ({
-  column,
-  screen
-}))
+const appendScreen = (columns: Column[], screen: AppScreen): ExtendedInfo[] =>
+  columns.map((column) => ({ column, screen }))
 
 const appendInfo = (
   extendedInfo: ExtendedInfo,
@@ -35,18 +30,14 @@ const appendInfo = (
   })
 }
 
-const appendAllInfo = (extendedInfos: ExtendedInfo[]) => {
-  return extendedInfos.reduce((acc, extendedInfo) => {
-    const totalWidth = acc.map((a) => a?.info?.width || 0).reduce((a, b) => a + b, 0)
-    const info = appendInfo(extendedInfo, MAX_COLUMNS, MAX_ROWS, totalWidth)
+const getTotalWidth = (extendedInfos: ExtendedInfo[]) =>
+  extendedInfos.map((a) => a?.info?.width || 0).reduce((a, b) => a + b, 0)
 
-    return [
-      ...acc,
-      info
-    ]
-  }, [] as ExtendedInfo[])
-
-}
+const appendAllInfo = (extendedInfos: ExtendedInfo[]) =>
+  extendedInfos.reduce((acc, extendedInfo) => [
+    ...acc,
+    appendInfo(extendedInfo, MAX_COLUMNS, MAX_ROWS, getTotalWidth(acc))
+  ], [] as ExtendedInfo[])
 
 const withoutHoled = (extendedInfos: ExtendedInfo[]) =>
   extendedInfos.filter((info) => !isHoled(info.column))
