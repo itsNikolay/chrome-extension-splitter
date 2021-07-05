@@ -12,7 +12,12 @@ const getWindowInfo = (screen: AppScreen) => {
   const screenWidth = screen.width || 1024
   const screenHeight = screen.height || 768
 
-  return (maxColumns: number) => (col: number) => (totalWidth: number) => (totalRows: number) => {
+  return (
+    maxColumns: number,
+    col: number,
+    totalWidth: number,
+    totalRows: number
+  ) => {
     const rowsAmount = Math.floor(totalWidth / screenWidth)
     const width = (screenWidth / maxColumns) * col
     const left = totalWidth % screenWidth
@@ -36,7 +41,7 @@ const updateData = ({ columns, screen }: Props): Info[] => {
 
   return columns.reduce((acc, col) => {
     const totalWidth = acc.map((a) => a.width || 0).reduce((a, b) => a + b, 0)
-    const windowInfo = initWindowInfo(MAX_COLUMNS)(col)(totalWidth)(totalRows)
+    const windowInfo = initWindowInfo(MAX_COLUMNS, col, totalWidth, totalRows)
 
     return [
       ...acc,
