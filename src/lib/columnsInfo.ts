@@ -1,42 +1,36 @@
 import { Column } from "./interfaces"
 
 const MAX_COLUMNS = 12
+const MAX_ROWS = 12
 
 const COLUMN_TYPES: { [key: string]: Column[] } = {
   oneTwelve: [
-    { type: "filled", cols: 12 }
+    { type: "filled", cols: 12, rows: 12 }
   ],
   twoSix: [
-    { type: "filled", cols: 6 },
-    { type: "filled", cols: 6 }
+    { type: "filled", cols: 6, rows: 12 },
+    { type: "filled", cols: 6, rows: 12 }
   ],
   twoThree: [
-    { type: "filled", cols: 3 },
-    { type: "filled", cols: 9 }
+    { type: "filled", cols: 3, rows: 12 },
+    { type: "filled", cols: 9, rows: 12 }
   ],
   twoNine: [
-    { type: "filled", cols: 9 },
-    { type: "filled", cols: 3 }
+    { type: "filled", cols: 9, rows: 12 },
+    { type: "filled", cols: 3, rows: 12 }
   ],
   fourSix: [
-    { type: "filled", cols: 6 },
-    { type: "filled", cols: 6 },
-    { type: "filled", cols: 6 },
-    { type: "filled", cols: 6 }
+    { type: "filled", cols: 6, rows: 6 },
+    { type: "filled", cols: 6, rows: 6 },
+    { type: "filled", cols: 6, rows: 6 },
+    { type: "filled", cols: 6, rows: 6 }
   ],
 }
-
-const getColumnsSum = (columns: Column[]) =>
-  columns.reduce((a, b) => a + b.cols, 0)
-
-const getRowsAmount = (columns: Column[]) =>
-  getColumnsSum(columns) / MAX_COLUMNS
 
 export {
   COLUMN_TYPES,
   MAX_COLUMNS,
-  getColumnsSum,
-  getRowsAmount
+  MAX_ROWS
 }
 
 export type { Column }

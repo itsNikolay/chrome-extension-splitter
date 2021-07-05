@@ -7,6 +7,7 @@ export type Wind = chrome.windows.Window
 export interface Column {
   type: 'hole' | 'filled'
   cols: number
+  rows: number
 }
 
 export interface ExtendedInfo {
