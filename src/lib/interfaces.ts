@@ -5,7 +5,7 @@ export type Info = chrome.windows.UpdateInfo
 export type Wind = chrome.windows.Window
 
 export interface Column {
-  type: 'hole' | 'filled'
+  type: 'holed' | 'filled'
   cols: number
   rows: number
 }

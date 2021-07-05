@@ -25,7 +25,11 @@ const Grid = () => {
             {columns.map((column, index) => (
               <div
                 key={index}
-                className={`border border-blue-500 col-span-${column.cols}`}
+                className={
+                  `border
+                  ${column.type === 'filled' ? 'border-blue-500' : 'border-grey'}
+                  col-span-${column.cols}`
+                }
               ></div>
             ))}
           </div>
