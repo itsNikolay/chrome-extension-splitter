@@ -1,5 +1,4 @@
-type Info = chrome.windows.UpdateInfo
-type Wind = chrome.windows.Window
+import { ExtendedInfo, Info, Wind } from "./interfaces"
 
 const getAllWindows = () => chrome.windows.getAll()
 
@@ -10,23 +9,21 @@ const createWindow = (info: Info) => chrome.windows.create(info)
 const updateWindow = async (info: Info, wind: Wind) =>
   wind?.id ? chrome.windows.update(wind.id, info) : null
 
-const resizeAllWindow = async (infos: Info[]) => {
+const resizeAllWindow = async (extendedInfos: ExtendedInfo[]) => {
   const winds = await getAllWindows()
   const currentWind = await getCurrentWindow()
   const sortedWinds = winds.sort((a, b) => (a?.id === currentWind?.id ? 1 : 0))
-  debugger
 
-
-  const res = infos.map((info, index) => {
+  const res = extendedInfos.map((extendedInfo, index) => {
     const wind = sortedWinds[index]
     if (wind) {
-      return updateWindow(info, wind)
+      return updateWindow(extendedInfo.info, wind)
     } else {
-      return createWindow(info)
+      return createWindow(extendedInfo.info)
     }
   })
 
-  Promise.all(res)
+  await Promise.all(res)
 }
 
 export {

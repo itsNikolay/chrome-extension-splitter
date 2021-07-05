@@ -1,19 +1,35 @@
-type Columns = number[]
+import { Column } from "./interfaces"
 
 const MAX_COLUMNS = 12
 
-const COLUMN_TYPES: { [key: string]: Columns } = {
-  oneTwelve: [12],
-  twoSix: [6, 6],
-  twoThree: [3, 9],
-  twoNine: [9, 3],
-  fourSix: [6, 6, 6, 6],
+const COLUMN_TYPES: { [key: string]: Column[] } = {
+  oneTwelve: [
+    { type: "filled", cols: 12 }
+  ],
+  twoSix: [
+    { type: "filled", cols: 6 },
+    { type: "filled", cols: 6 }
+  ],
+  twoThree: [
+    { type: "filled", cols: 3 },
+    { type: "filled", cols: 9 }
+  ],
+  twoNine: [
+    { type: "filled", cols: 9 },
+    { type: "filled", cols: 3 }
+  ],
+  fourSix: [
+    { type: "filled", cols: 6 },
+    { type: "filled", cols: 6 },
+    { type: "filled", cols: 6 },
+    { type: "filled", cols: 6 }
+  ],
 }
 
-const getColumnsSum = (columns: Columns) =>
-  columns.reduce((a, b) => a + b)
+const getColumnsSum = (columns: Column[]) =>
+  columns.reduce((a, b) => a + b.cols, 0)
 
-const getRowsAmount = (columns: Columns) =>
+const getRowsAmount = (columns: Column[]) =>
   getColumnsSum(columns) / MAX_COLUMNS
 
 export {
@@ -22,4 +38,5 @@ export {
   getColumnsSum,
   getRowsAmount
 }
-export type { Columns }
+
+export type { Column }

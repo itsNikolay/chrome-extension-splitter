@@ -1,9 +1,9 @@
 import React from 'react'
-import { Columns, COLUMN_TYPES } from '../lib/columnsInfo'
+import { Column, COLUMN_TYPES } from '../lib/columnsInfo'
 import { updateData } from '../lib/updateInfo'
 import { resizeAllWindow } from '../lib/windows'
 
-const onClick = async (columns: Columns) => {
+const onClick = async (columns: Column[]) => {
   const screen = window.screen
 
   if (!screen) { return }
@@ -11,7 +11,6 @@ const onClick = async (columns: Columns) => {
   const data = updateData({ columns, screen })
   return await resizeAllWindow(data)
 }
-
 
 const Grid = () => {
   return (
@@ -23,10 +22,10 @@ const Grid = () => {
           onClick={() => onClick(columns)}
         >
           <div className="h-12 grid grid-cols-12 gap-2">
-            {columns.map((col, index) => (
+            {columns.map((column, index) => (
               <div
                 key={index}
-                className={`border border-blue-500 col-span-${col}`}
+                className={`border border-blue-500 col-span-${column.cols}`}
               ></div>
             ))}
           </div>

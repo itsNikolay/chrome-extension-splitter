@@ -1,12 +1,5 @@
-import { Columns, getRowsAmount, MAX_COLUMNS } from "./columnsInfo";
-
-type AppScreen = Partial<typeof window.screen>
-type Info = chrome.windows.UpdateInfo
-
-interface Props {
-  columns: Columns
-  screen: AppScreen
-}
+import { getRowsAmount, MAX_COLUMNS } from "./columnsInfo";
+import { AppScreen, Column, ExtendedInfo } from "./interfaces";
 
 const getWindowInfo = (screen: AppScreen) => {
   const screenWidth = screen.width || 1024
@@ -14,40 +7,48 @@ const getWindowInfo = (screen: AppScreen) => {
 
   return (
     maxColumns: number,
-    col: number,
+    column: Column,
     totalWidth: number,
     totalRows: number
   ) => {
     const rowsAmount = Math.floor(totalWidth / screenWidth)
-    const width = (screenWidth / maxColumns) * col
+    const width = (screenWidth / maxColumns) * column.cols
     const left = totalWidth % screenWidth
     const height = screenHeight / totalRows
     const top = rowsAmount * height
     const focused = true
 
     return ({
-      width,
-      top,
-      height,
-      left,
-      focused
+      column,
+      info: {
+        width,
+        top,
+        height,
+        left,
+        focused,
+      }
     })
   }
 }
 
-const updateData = ({ columns, screen }: Props): Info[] => {
+interface Props {
+  columns: Column[]
+  screen: AppScreen
+}
+
+const updateData = ({ columns, screen }: Props): ExtendedInfo[] => {
   const initWindowInfo = getWindowInfo(screen)
   const totalRows = getRowsAmount(columns)
 
-  return columns.reduce((acc, col) => {
-    const totalWidth = acc.map((a) => a.width || 0).reduce((a, b) => a + b, 0)
-    const windowInfo = initWindowInfo(MAX_COLUMNS, col, totalWidth, totalRows)
+  return columns.reduce((acc, column) => {
+    const totalWidth = acc.map((a) => a.info.width || 0).reduce((a, b) => a + b, 0)
+    const windowInfo = initWindowInfo(MAX_COLUMNS, column, totalWidth, totalRows)
 
     return [
       ...acc,
       windowInfo
     ]
-  }, [] as Info[])
+  }, [] as ExtendedInfo[])
 
 }
 
