@@ -1,4 +1,4 @@
-import { MAX_COLUMNS, MAX_ROWS } from "./columnsInfo";
+import { isHoled, MAX_COLUMNS, MAX_ROWS } from "./columnsInfo";
 import { AppScreen, Column, ExtendedInfo } from "./interfaces";
 
 const appendScreen = (
@@ -48,4 +48,7 @@ const appendAllInfo = (extendedInfos: ExtendedInfo[]) => {
 
 }
 
-export { appendAllInfo, appendScreen }
+const withoutHoled = (extendedInfos: ExtendedInfo[]) =>
+  extendedInfos.filter((info) => !isHoled(info.column))
+
+export { appendAllInfo, appendScreen, withoutHoled }

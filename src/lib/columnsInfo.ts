@@ -51,10 +51,13 @@ const COLUMN_TYPES: { [key: string]: Column[] } = {
   ],
 }
 
+const isHoled = (column: Column) => column.type == 'holed'
+
 export {
   COLUMN_TYPES,
   MAX_COLUMNS,
-  MAX_ROWS
+  MAX_ROWS,
+  isHoled
 }
 
 export type { Column }

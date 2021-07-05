@@ -1,4 +1,5 @@
 import { ExtendedInfo, Info, Wind } from "./interfaces"
+import { withoutHoled } from "./updateInfo"
 
 const getAllWindows = () => chrome.windows.getAll()
 
@@ -14,8 +15,9 @@ const resizeAllWindow = async (extendedInfos: ExtendedInfo[]) => {
   const currentWind = await getCurrentWindow()
   const sortedWinds = winds.sort((a, b) => (a?.id === currentWind?.id ? 1 : 0))
 
-  const res = extendedInfos.map((extendedInfo, index) => {
+  const res = withoutHoled(extendedInfos).map((extendedInfo, index) => {
     if (!extendedInfo.info) { return }
+    if (extendedInfo.column.type === 'holed') { return }
 
     const wind = sortedWinds[index]
     if (wind) {
