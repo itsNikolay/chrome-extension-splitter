@@ -1,16 +1,6 @@
 import React from 'react'
-import { Column, ColumnType } from '../lib/columnsInfo'
-import { appendAllInfo, appendScreen } from '../lib/updateInfo'
-import { resizeAllWindow } from '../lib/windows'
-
-const onClick = async (columns: Column[]) => {
-  const screen = window.screen
-  if (!screen) { return }
-
-  const extendedInfos = appendScreen(columns, screen)
-  const extendedInfos2 = appendAllInfo(extendedInfos)
-  return await resizeAllWindow(extendedInfos2)
-}
+import { ColumnType } from '../lib/columnsInfo'
+import Cell from './Cell'
 
 interface Props {
   columnTypes: ColumnType
@@ -20,24 +10,7 @@ const Grid = ({ columnTypes }: Props) => {
   return (
     <div className="grid grid-row-3 gap-5">
       {Object.entries(columnTypes).map(([key, columns]) => (
-        <button
-          key={key}
-          className="hover:shadow-lg transition-all"
-          onClick={() => onClick(columns)}
-        >
-          <div className="h-12 grid grid-cols-12 gap-2">
-            {columns.map((column, index) => (
-              <div
-                key={index}
-                className={
-                  `border
-                  ${column.type === 'filled' ? 'border-blue-500' : 'border-grey'}
-                  col-span-${column.cols}`
-                }
-              ></div>
-            ))}
-          </div>
-        </button>
+        <Cell key={key} columns={columns} />
       ))}
     </div>
   )

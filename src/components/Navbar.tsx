@@ -7,7 +7,12 @@ import {
 import StarIcon from './StarIcon'
 
 const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) => (
-  <NavLink exact to={to} activeClassName="bg-blue-200" className="hover:bg-blue-100 transition-colors">
+  <NavLink
+    exact
+    to={to}
+    activeClassName="bg-blue-200"
+    className="hover:bg-blue-100 transition-colors duration-500"
+  >
     <div className="py-3 text-center">
       {name}
     </div>
