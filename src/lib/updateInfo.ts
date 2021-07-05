@@ -1,4 +1,4 @@
-import { getAppScreen } from "./appScreen";
+import { getAppWindow } from "./appWindow";
 import { Columns, getRowsAmount, MAX_COLUMNS } from "./columnsInfo";
 
 type Info = chrome.windows.UpdateInfo
@@ -9,17 +9,17 @@ interface Props {
 }
 
 const updateData = ({ columns, screen }: Props): Info[] => {
-  const appScreen = getAppScreen(screen)
+  const initAppWindow = getAppWindow(screen)
   const totalRows = getRowsAmount(columns)
 
   return columns.reduce((acc, col) => {
     const totalWidth = acc.map((a) => a.width || 0).reduce((a, b) => a + b, 0)
+    const appWindow = initAppWindow(totalWidth)
 
-    const width = appScreen.getWidth(MAX_COLUMNS, col)
-    const height = appScreen.getHeight(totalRows)
-    const left = appScreen.getLeft(totalWidth)
-    const top = appScreen.getTop(totalWidth, height)
-
+    const width = appWindow.getWidth(MAX_COLUMNS, col)
+    const height = appWindow.getHeight(totalRows)
+    const left = appWindow.getLeft()
+    const top = appWindow.getTop(height)
     const focused = true
 
     return [
