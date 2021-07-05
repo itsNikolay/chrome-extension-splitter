@@ -13,14 +13,12 @@ const onClick = async (columns: Column[]) => {
 }
 
 interface Props {
-  key: string
   columns: Column[]
 }
 
-const Cell = ({ key, columns }: Props) => {
+const Cell = ({ columns }: Props) => {
   return (
     <button
-      key={key}
       onClick={() => onClick(columns)}
       className="transitions-colors duration-500 hover:bg-blue-100"
     >
