@@ -15,6 +15,8 @@ const resizeAllWindow = async (extendedInfos: ExtendedInfo[]) => {
   const sortedWinds = winds.sort((a, b) => (a?.id === currentWind?.id ? 1 : 0))
 
   const res = extendedInfos.map((extendedInfo, index) => {
+    if (!extendedInfo.info) { return }
+
     const wind = sortedWinds[index]
     if (wind) {
       return updateWindow(extendedInfo.info, wind)

@@ -1,15 +1,15 @@
 import React from 'react'
 import { Column, COLUMN_TYPES } from '../lib/columnsInfo'
-import { updateData } from '../lib/updateInfo'
+import { appendAllInfo, appendScreen } from '../lib/updateInfo'
 import { resizeAllWindow } from '../lib/windows'
 
 const onClick = async (columns: Column[]) => {
   const screen = window.screen
-
   if (!screen) { return }
 
-  const data = updateData({ columns, screen })
-  return await resizeAllWindow(data)
+  const extendedInfos = appendScreen(columns, screen)
+  const extendedInfos2 = appendAllInfo(extendedInfos)
+  return await resizeAllWindow(extendedInfos2)
 }
 
 const Grid = () => {

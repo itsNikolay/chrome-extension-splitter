@@ -11,5 +11,6 @@ export interface Column {
 
 export interface ExtendedInfo {
   column: Column
-  info: Info
+  info?: Info
+  screen?: AppScreen
 }
