@@ -1,5 +1,5 @@
 import React from 'react'
-import { Column, COLUMN_TYPES } from '../lib/columnsInfo'
+import { Column, ColumnType } from '../lib/columnsInfo'
 import { appendAllInfo, appendScreen } from '../lib/updateInfo'
 import { resizeAllWindow } from '../lib/windows'
 
@@ -12,10 +12,14 @@ const onClick = async (columns: Column[]) => {
   return await resizeAllWindow(extendedInfos2)
 }
 
-const Grid = () => {
+interface Props {
+  columnTypes: ColumnType
+}
+
+const Grid = ({ columnTypes }: Props) => {
   return (
     <div className="grid grid-row-3 gap-5">
-      {Object.entries(COLUMN_TYPES).map(([key, columns]) => (
+      {Object.entries(columnTypes).map(([key, columns]) => (
         <button
           key={key}
           className="hover:shadow-lg transition-all"

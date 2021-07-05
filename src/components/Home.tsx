@@ -1,13 +1,10 @@
 import React from 'react'
-import FooterButtons from './FooterButtons'
+import { COLUMN_TYPES } from '../lib/columnsInfo'
 import Grid from './Grid'
 
 const Home = () => {
   return (
-    <div className="container mx-auto w-96 p-5">
-      <Grid />
-      <FooterButtons />
-    </div>
+    <Grid columnTypes={COLUMN_TYPES} />
   )
 }
 

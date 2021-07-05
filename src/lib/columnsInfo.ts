@@ -3,7 +3,9 @@ import { Column } from "./interfaces"
 const MAX_COLUMNS = 12
 const MAX_ROWS = 12
 
-const ONE_COLUMN_TYPES: { [key: string]: Column[] } = {
+type ColumnType = { [key: string]: Column[] }
+
+const ONE_COLUMN_TYPES: ColumnType = {
   oneTwelve: [
     { type: "filled", cols: 12, rows: 12 }
   ],
@@ -33,7 +35,7 @@ const ONE_COLUMN_TYPES: { [key: string]: Column[] } = {
   ],
 }
 
-const TWO_COLUMN_TYPES: { [key: string]: Column[] } = {
+const TWO_COLUMN_TYPES: ColumnType = {
   twoSixSix: [
     { type: "filled", cols: 6, rows: 12 },
     { type: "filled", cols: 6, rows: 12 }
@@ -72,7 +74,7 @@ const TWO_COLUMN_TYPES: { [key: string]: Column[] } = {
   ],
 }
 
-const THREE_COLUMN_TYPES: { [key: string]: Column[] } = {
+const THREE_COLUMN_TYPES: ColumnType = {
   threeFourFourFour: [
     { type: "filled", cols: 4, rows: 12 },
     { type: "filled", cols: 4, rows: 12 },
@@ -80,7 +82,7 @@ const THREE_COLUMN_TYPES: { [key: string]: Column[] } = {
   ],
 }
 
-const FOUR_COLUMN_TYPES: { [key: string]: Column[] } = {
+const FOUR_COLUMN_TYPES: ColumnType = {
   fourSixSixSixSix: [
     { type: "filled", cols: 6, rows: 6 },
     { type: "filled", cols: 6, rows: 6 },
@@ -89,7 +91,7 @@ const FOUR_COLUMN_TYPES: { [key: string]: Column[] } = {
   ],
 }
 
-const COLUMN_TYPES: { [key: string]: Column[] } = {
+const COLUMN_TYPES: ColumnType = {
   ...ONE_COLUMN_TYPES,
   ...TWO_COLUMN_TYPES,
   ...THREE_COLUMN_TYPES,
@@ -102,7 +104,11 @@ export {
   COLUMN_TYPES,
   MAX_COLUMNS,
   MAX_ROWS,
-  isHoled
+  isHoled,
+  ONE_COLUMN_TYPES,
+  TWO_COLUMN_TYPES,
+  THREE_COLUMN_TYPES,
+  FOUR_COLUMN_TYPES
 }
 
-export type { Column }
+export type { Column, ColumnType }

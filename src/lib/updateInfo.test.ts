@@ -25,11 +25,11 @@ it('12', () => {
 });
 
 it('6,6', () => {
-  const extendedInfos = appendScreen(COLUMN_TYPES.twoSix, screen)
+  const extendedInfos = appendScreen(COLUMN_TYPES.twoSixSix, screen)
   const res = appendAllInfo(extendedInfos)
   expect(res).toEqual([
     {
-      column: COLUMN_TYPES.twoSix[0],
+      column: COLUMN_TYPES.twoSixSix[0],
       screen,
       info: {
         width: 1500,
@@ -40,7 +40,7 @@ it('6,6', () => {
       },
     },
     {
-      column: COLUMN_TYPES.twoSix[1],
+      column: COLUMN_TYPES.twoSixSix[1],
       screen,
       info: {
         width: 1500,
@@ -54,11 +54,11 @@ it('6,6', () => {
 });
 
 it('3,9', () => {
-  const extendedInfos = appendScreen(COLUMN_TYPES.twoThree, screen)
+  const extendedInfos = appendScreen(COLUMN_TYPES.twoThreeNine, screen)
   const res = appendAllInfo(extendedInfos)
   expect(res).toEqual([
     {
-      column: COLUMN_TYPES.twoThree[0],
+      column: COLUMN_TYPES.twoThreeNine[0],
       screen,
       info: {
         width: 750,
@@ -69,7 +69,7 @@ it('3,9', () => {
       },
     },
     {
-      column: COLUMN_TYPES.twoThree[1],
+      column: COLUMN_TYPES.twoThreeNine[1],
       screen,
       info: {
         width: 2250,
@@ -83,11 +83,11 @@ it('3,9', () => {
 });
 
 it('9,3', () => {
-  const extendedInfos = appendScreen(COLUMN_TYPES.twoNine, screen)
+  const extendedInfos = appendScreen(COLUMN_TYPES.twoNineThree, screen)
   const res = appendAllInfo(extendedInfos)
   expect(res).toEqual([
     {
-      column: COLUMN_TYPES.twoNine[0],
+      column: COLUMN_TYPES.twoNineThree[0],
       screen,
       info: {
         width: 2250,
@@ -98,7 +98,7 @@ it('9,3', () => {
       },
     },
     {
-      column: COLUMN_TYPES.twoNine[1],
+      column: COLUMN_TYPES.twoNineThree[1],
       screen,
       info: {
         width: 750,
@@ -112,11 +112,11 @@ it('9,3', () => {
 });
 
 it('6,6,6,6', () => {
-  const extendedInfos = appendScreen(COLUMN_TYPES.fourSix, screen)
+  const extendedInfos = appendScreen(COLUMN_TYPES.fourSixSixSixSix, screen)
   const res = appendAllInfo(extendedInfos)
   expect(res).toEqual([
     {
-      column: COLUMN_TYPES.fourSix[0],
+      column: COLUMN_TYPES.fourSixSixSixSix[0],
       screen,
       info: {
         width: 1500,
@@ -127,7 +127,7 @@ it('6,6,6,6', () => {
       },
     },
     {
-      column: COLUMN_TYPES.fourSix[1],
+      column: COLUMN_TYPES.fourSixSixSixSix[1],
       screen,
       info: {
         width: 1500,
@@ -138,7 +138,7 @@ it('6,6,6,6', () => {
       },
     },
     {
-      column: COLUMN_TYPES.fourSix[2],
+      column: COLUMN_TYPES.fourSixSixSixSix[2],
       screen,
       info: {
         width: 1500,
@@ -149,7 +149,7 @@ it('6,6,6,6', () => {
       },
     },
     {
-      column: COLUMN_TYPES.fourSix[3],
+      column: COLUMN_TYPES.fourSixSixSixSix[3],
       screen,
       info: {
         width: 1500,
