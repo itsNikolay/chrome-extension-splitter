@@ -1,10 +1,9 @@
 import React, { ReactElement } from 'react'
 import { NavLink } from 'react-router-dom'
 import {
-  FOUR_COLUMNS_PATH, ONE_COLUMNS_PATH, ROOT_PATH,
+  FOUR_COLUMNS_PATH, ONE_COLUMNS_PATH,
   THREE_COLUMNS_PATH, TWO_COLUMNS_PATH
 } from '../lib/routePathes'
-import StarIcon from './StarIcon'
 
 const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) => (
   <NavLink
@@ -14,14 +13,15 @@ const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) =
     className="hover:bg-blue-100 transition-colors duration-500"
   >
     <div className="py-3 text-center">
-      {name}
+      <div>{name}</div>
+      <div>{Number(name) > 1 ? 'windows' : 'window'}</div>
     </div>
   </NavLink>
 )
 
 const Navbar = () => (
-  <div className="grid grid-cols-5 grid-flow-col pb-2">
-    <NavWrapper to={ROOT_PATH} name={<StarIcon />} />
+  <div className="grid grid-cols-auto grid-flow-col pb-2">
+    {/* <NavWrapper to={ROOT_PATH} name={<StarIcon />} /> */}
     <NavWrapper to={ONE_COLUMNS_PATH} name="1" />
     <NavWrapper to={TWO_COLUMNS_PATH} name="2" />
     <NavWrapper to={THREE_COLUMNS_PATH} name="3" />

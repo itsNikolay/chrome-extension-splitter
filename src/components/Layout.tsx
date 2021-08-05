@@ -10,7 +10,9 @@ const Layout = ({ children }: Props) => {
   return (
     <div className="container mx-auto w-96 p-5">
       <Navbar />
-      {children}
+      <div className="overflow-scroll h-96 shadow-inner">
+        {children}
+      </div>
       <FooterButtons />
     </div >
   )
