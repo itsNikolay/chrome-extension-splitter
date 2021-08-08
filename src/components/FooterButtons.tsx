@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import AboutDialog from './AboutDialog'
 
 const FooterButtons = () => {
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className="grid grid-cols-auto grid-flow-col mt-5 gap-6">
