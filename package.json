@@ -50,6 +50,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.0",
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
