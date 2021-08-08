@@ -3,10 +3,9 @@
   "description": "Base Level Extension",
   "version": "1.0",
   "manifest_version": 3,
-  "permission": ["tabs"],
+  "permissions": ["tabs"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icons/icon.png"
+    "default_popup": "popup.html"
   },
   "commands": {
     "_execute_action": {
@@ -20,10 +19,10 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*.nytimes.com/*"],
-      "js": ["content.js"]
-    }
-  ]
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
