@@ -20,7 +20,7 @@ const FooterButtons = () => {
           href="https://forms.gle/AVdW2FD1hHC8YMst5"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block underline fill-current hover:text-blue-500 transition-colors duration-200"
+          className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
           Feedback
         </a>
@@ -30,7 +30,7 @@ const FooterButtons = () => {
           href="https://nponomarev.com/splitter-extension-donate"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block underline fill-current hover:text-blue-500 transition-colors duration-200"
+          className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
           {'♥ Donate'}
         </a>
