@@ -5,11 +5,11 @@ const FooterButtons = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="grid grid-cols-auto grid-flow-col mt-5 gap-6">
+    <div className="grid grid-cols-3 grid-flow-col mt-5 gap-6">
       <div className="text-center">
         <button
           onClick={() => setIsOpen(true)}
-          className="inline-block fill-current hover:text-blue-500 w-12 transition-colors duration-200"
+          className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
           About
         </button>
@@ -20,7 +20,7 @@ const FooterButtons = () => {
           href="https://forms.gle/AVdW2FD1hHC8YMst5"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block underline fill-current hover:text-blue-500 w-12 transition-colors duration-200"
+          className="inline-block underline fill-current hover:text-blue-500 transition-colors duration-200"
         >
           Feedback
         </a>
@@ -30,9 +30,9 @@ const FooterButtons = () => {
           href="https://nponomarev.com/splitter-extension-donate"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block underline fill-current hover:text-blue-500 w-12 transition-colors duration-200"
+          className="inline-block underline fill-current hover:text-blue-500 transition-colors duration-200"
         >
-          Donate
+          {'♥ Donate'}
         </a>
       </div>
     </div>

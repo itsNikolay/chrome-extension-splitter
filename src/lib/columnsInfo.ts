@@ -13,9 +13,25 @@ const ONE_COLUMN_TYPES: ColumnType = {
     { type: "filled", cols: 3, rows: 12 },
     { type: "holed", cols: 9, rows: 12 },
   ],
+  oneFourEight: [
+    { type: "filled", cols: 4, rows: 12 },
+    { type: "holed", cols: 8, rows: 12 },
+  ],
+  oneFiveSeven: [
+    { type: "filled", cols: 5, rows: 12 },
+    { type: "holed", cols: 7, rows: 12 },
+  ],
   oneSixSix: [
     { type: "filled", cols: 6, rows: 12 },
     { type: "holed", cols: 6, rows: 12 },
+  ],
+  oneSevenFive: [
+    { type: "filled", cols: 7, rows: 12 },
+    { type: "holed", cols: 5, rows: 12 },
+  ],
+  oneEightFour: [
+    { type: "filled", cols: 8, rows: 12 },
+    { type: "holed", cols: 4, rows: 12 },
   ],
   oneNineThree: [
     { type: "filled", cols: 9, rows: 12 },
@@ -25,13 +41,39 @@ const ONE_COLUMN_TYPES: ColumnType = {
     { type: "holed", cols: 9, rows: 12 },
     { type: "filled", cols: 3, rows: 12 },
   ],
+  oneEightFourFilled: [
+    { type: "holed", cols: 8, rows: 12 },
+    { type: "filled", cols: 4, rows: 12 },
+  ],
+  oneSevenFiveFilled: [
+    { type: "holed", cols: 7, rows: 12 },
+    { type: "filled", cols: 5, rows: 12 },
+  ],
   oneHoledSix: [
     { type: "holed", cols: 6, rows: 12 },
     { type: "filled", cols: 6, rows: 12 },
   ],
+  oneFiveSevenFilled: [
+    { type: "holed", cols: 5, rows: 12 },
+    { type: "filled", cols: 7, rows: 12 },
+  ],
+  oneFourEightFilled: [
+    { type: "holed", cols: 4, rows: 12 },
+    { type: "filled", cols: 8, rows: 12 },
+  ],
   oneHoledNine: [
     { type: "holed", cols: 3, rows: 12 },
     { type: "filled", cols: 9, rows: 12 },
+  ],
+  oneHoledSixFilledOneHoled: [
+    { type: "holed", cols: 3, rows: 12 },
+    { type: "filled", cols: 6, rows: 12 },
+    { type: "holed", cols: 3, rows: 12 },
+  ],
+  fourHoledFourFilledFourHoled: [
+    { type: "holed", cols: 4, rows: 12 },
+    { type: "filled", cols: 4, rows: 12 },
+    { type: "holed", cols: 4, rows: 12 },
   ],
 }
 
