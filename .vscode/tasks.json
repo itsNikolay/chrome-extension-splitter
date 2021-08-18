@@ -6,7 +6,10 @@
       "problemMatcher": [
         "$ts-checker-eslint-webpack-watch"
       ],
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "label": "npm: build",
       "detail": "webpack",
       "isBackground": true
@@ -17,13 +20,19 @@
       "problemMatcher": [
         "$eslint-compact"
       ],
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "label": "npm: watch",
       "detail": "webpack --watch",
     },
     {
       "type": "npm",
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "script": "start",
       "problemMatcher": [
         "$eslint-compact"

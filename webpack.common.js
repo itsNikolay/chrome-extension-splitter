@@ -34,6 +34,7 @@ const config = {
       patterns: [
         { from: "./src/manifest.json", to: "manifest.json" },
         { from: "./src/icons", to: "icons" },
+        { from: "./src/_locales", to: "_locales" },
       ],
     }),
   ],

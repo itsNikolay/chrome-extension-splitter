@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { getMessage } from '../lib/locales'
 import AboutDialog from './AboutDialog'
 
 const FooterButtons = () => {
@@ -11,7 +12,7 @@ const FooterButtons = () => {
           onClick={() => setIsOpen(true)}
           className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
-          About
+          {getMessage('About')}
         </button>
         {isOpen && <AboutDialog isOpen={isOpen} setIsOpen={setIsOpen} />}
       </div>
