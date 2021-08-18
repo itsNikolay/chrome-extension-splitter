@@ -66,7 +66,7 @@ const getData = async (filePath) => {
 };
 
 const createFiles = (baseData) => {
-  Object.entries(languages).forEach(([locale, value]) => {
+  Object.entries(languages).forEach(async ([locale, value]) => {
     const localePath = path.resolve() + "/" + "src/_locales/" + locale;
     mkdirSync(localePath, { recursive: true });
 
@@ -75,10 +75,9 @@ const createFiles = (baseData) => {
     if (!isExists) {
       writeFileSync(messagesPath, "{}");
     }
-    const data = getData(messagesPath).then((data) => {
-      const newData = { ...baseData, ...data };
-      writeFileSync(messagesPath, JSON.stringify(newData, null, 2));
-    });
+    const data = await getData(messagesPath);
+    const newData = { ...baseData, ...data };
+    writeFileSync(messagesPath, JSON.stringify(newData, null, 2));
   });
 };
 
