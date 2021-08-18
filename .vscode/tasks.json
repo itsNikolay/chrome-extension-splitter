@@ -39,6 +39,19 @@
       ],
       "label": "npm: start",
       "detail": "webpack serve --open"
+    },
+    {
+      "type": "npm",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "script": "locale",
+      "problemMatcher": [
+        "$eslint-compact"
+      ],
+      "label": "npm: locale",
+      "detail": "generate locales"
     }
   ]
 }

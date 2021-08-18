@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react'
 import { NavLink } from 'react-router-dom'
+import { getMessage } from '../lib/locales'
 import {
   FOUR_COLUMNS_PATH,
   ROOT_PATH,
@@ -15,7 +16,7 @@ const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) =
   >
     <div className="py-3 text-center">
       <div>{name}</div>
-      <div>{Number(name) > 1 ? 'windows' : 'window'}</div>
+      <div>{getMessage(Number(name) > 1 ? 'windows' : 'window')}</div>
     </div>
   </NavLink>
 )

@@ -23,7 +23,7 @@ const FooterButtons = () => {
           rel="noopener noreferrer"
           className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
-          Feedback
+          {getMessage('Feedback')}
         </a>
       </div>
       <div className="text-center">
@@ -33,7 +33,7 @@ const FooterButtons = () => {
           rel="noopener noreferrer"
           className="inline-block fill-current hover:text-blue-500 transition-colors duration-200"
         >
-          {'♥ Donate'}
+          ♥ {getMessage('Donate')}
         </a>
       </div>
     </div>

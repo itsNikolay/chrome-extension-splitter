@@ -1,6 +1,22 @@
 {
-  "Hello_World": {
-    "message": "Changed",
-    "description": "hello check"
+  "window": {
+    "message": "window",
+    "description": "window"
+  },
+  "windows": {
+    "message": "windows",
+    "description": "windows"
+  },
+  "About": {
+    "message": "About",
+    "description": "About"
+  },
+  "Feedback": {
+    "message": "Feedback",
+    "description": "Feedback"
+  },
+  "Donate": {
+    "message": "Donate",
+    "description": "Donate"
   }
 }
