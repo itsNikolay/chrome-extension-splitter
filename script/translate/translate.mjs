@@ -76,15 +76,14 @@ const createFiles = (baseData) => {
       writeFileSync(messagesPath, "{}");
     }
     const data = getData(messagesPath).then((data) => {
-      console.log(data);
+      const newData = { ...baseData, ...data };
+      writeFileSync(messagesPath, JSON.stringify(newData, null, 2));
     });
-    const newData = { ...baseData, ...data };
-    writeFileSync(messagesPath, JSON.stringify(newData, null, 2));
   });
 };
 
 getData(path.resolve() + "/" + "script/translate/messages.json").then(
-  async (baseData) => {
-    await createFiles(baseData);
+  (baseData) => {
+    createFiles(baseData);
   }
 );
