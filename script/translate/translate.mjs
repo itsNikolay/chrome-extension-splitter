@@ -84,5 +84,8 @@ const createFiles = (baseData) => {
 getData(path.resolve() + "/" + "script/translate/messages.json").then(
   (baseData) => {
     createFiles(baseData);
+    Object.entries(baseData).forEach(([key, value]) => {
+      console.log(value.message, "\n");
+    });
   }
 );

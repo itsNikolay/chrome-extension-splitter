@@ -6,14 +6,12 @@ interface Props {
   columnTypes: ColumnType
 }
 
-const Grid = ({ columnTypes }: Props) => {
-  return (
-    <div className="grid grid-row-3 gap-5">
-      {Object.entries(columnTypes).map(([key, columns]) => (
-        <Cell key={key} columns={columns} />
-      ))}
-    </div>
-  )
-}
+const Grid = ({ columnTypes }: Props) => (
+  <div className="grid grid-row-3 gap-5">
+    {Object.entries(columnTypes).map(([key, columns]) => (
+      <Cell key={key} columns={columns} />
+    ))}
+  </div>
+)
 
 export default Grid
