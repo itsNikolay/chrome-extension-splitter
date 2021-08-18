@@ -1,14 +1,14 @@
 {
   "window": {
-    "message": "window",
+    "message": "finestra",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "finestre",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Informazioni sull'app",
     "description": "About"
   },
   "Feedback": {
@@ -16,15 +16,15 @@
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Donare",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Sentiti libero di donare una tazza di caffè virtuale se ti piace questa app con il pulsante Dona qui sotto",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Capito grazie!",
     "description": "About Button Content"
   }
 }

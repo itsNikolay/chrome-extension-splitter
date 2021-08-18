@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "창문",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "창문",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "앱 정보",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "피드백",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "기부",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "이 앱이 마음에 드시면 아래 기부 버튼으로 가상 커피 한 잔을 자유롭게 기부하세요.",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "알겠습니다. 감사합니다!",
     "description": "About Button Content"
   }
 }

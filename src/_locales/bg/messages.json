@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "прозорец",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "прозорци",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Относно приложението",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Обратна връзка",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Дарете",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Чувствайте се свободни да дарите виртуална чаша кафе, ако се наслаждавате на това приложение с бутона Дари по -долу",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Взех го благодаря!",
     "description": "About Button Content"
   }
 }

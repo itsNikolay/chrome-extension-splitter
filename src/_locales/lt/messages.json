@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "langas",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "langai",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Apie programėlę",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Atsiliepimas",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Paaukoti",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Nedvejodami paaukokite virtualų kavos puodelį, jei jums patinka ši programa su mygtuku Dovanoti žemiau",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Supratau, ačiū!",
     "description": "About Button Content"
   }
 }

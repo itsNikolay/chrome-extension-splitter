@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "fereastră",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "ferestre",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Despre aplicație",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Părere",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Donează",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Simțiți-vă liber să donați o ceașcă de cafea virtuală dacă vă bucurați de această aplicație cu butonul Donare de mai jos",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Am înțeles, mulțumesc!",
     "description": "About Button Content"
   }
 }

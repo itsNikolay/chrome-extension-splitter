@@ -1,14 +1,14 @@
 {
   "window": {
-    "message": "window",
+    "message": "vindue",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "vinduer",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Om appen",
     "description": "About"
   },
   "Feedback": {
@@ -16,15 +16,15 @@
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Doner",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Donér gerne en virtuel kop kaffe, hvis du nyder denne app med knappen Doner herunder",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Fik det, tak!",
     "description": "About Button Content"
   }
 }

@@ -3,8 +3,8 @@ import path from "path";
 import { mkdirSync, writeFileSync, existsSync } from "fs";
 
 const languages = {
-  ar: { description: "Arabic" },
   am: { description: "Amharic" },
+  ar: { description: "Arabic" },
   bg: { description: "Bulgarian" },
   bn: { description: "Bengali" },
   ca: { description: "Catalan" },
@@ -12,11 +12,11 @@ const languages = {
   da: { description: "Danish" },
   de: { description: "German" },
   el: { description: "Greek" },
-  en: { description: "English" },
   en_GB: { description: "English (Great Britain)" },
   en_US: { description: "English (USA)" },
-  es: { description: "Spanish" },
+  en: { description: "English" },
   es_419: { description: "Spanish (Latin America and Caribbean)" },
+  es: { description: "Spanish" },
   et: { description: "Estonian" },
   fa: { description: "Persian" },
   fi: { description: "Finnish" },

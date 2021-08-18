@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "ജാലകം",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "ജാലകങ്ങൾ",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "ആപ്പിനെ കുറിച്ച്",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "ഫീഡ്ബാക്ക്",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "സംഭാവനചെയ്യുക",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "ചുവടെയുള്ള സംഭാവന ബട്ടൺ ഉപയോഗിച്ച് നിങ്ങൾ ഈ അപ്ലിക്കേഷൻ ആസ്വദിക്കുകയാണെങ്കിൽ ഒരു വെർച്വൽ കപ്പ് കാപ്പി സംഭാവന ചെയ്യാൻ മടിക്കേണ്ടതില്ല",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "കിട്ടി നന്ദി!",
     "description": "About Button Content"
   }
 }

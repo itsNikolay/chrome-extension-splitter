@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "חַלוֹן",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "חלונות",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "לגבי האפליקציה",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "מָשׁוֹב",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "לִתְרוֹם",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "אל תהסס לתרום כוס קפה וירטואלית אם אתה נהנה מאפליקציה זו עם כפתור התרומה למטה",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "הבנתי, תודה!",
     "description": "About Button Content"
   }
 }

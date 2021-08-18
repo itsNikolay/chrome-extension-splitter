@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "logs",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "logi",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Par lietotni",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Atsauksmes",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Ziedot",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Jūtieties brīvi ziedot virtuālu kafijas tasi, ja jums patīk šī lietotne ar pogu Ziedot zemāk",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Sapratu, paldies!",
     "description": "About Button Content"
   }
 }

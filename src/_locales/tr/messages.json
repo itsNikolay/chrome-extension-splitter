@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "pencere",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "pencereler",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Uygulama hakkında",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Geri bildirim",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Bağış yapmak",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Aşağıdaki Bağışta Bulun düğmesi ile bu uygulamanın tadını çıkarırsanız, sanal bir fincan kahve bağışlamaktan çekinmeyin",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Anladım, teşekkürler!",
     "description": "About Button Content"
   }
 }

@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "窗户",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "视窗",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "关于应用程序",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "回馈",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "捐赠",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "如果您喜欢这个应用程序并使用下方的“捐赠”按钮，请随时捐赠一杯虚拟咖啡",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "知道了，谢谢！",
     "description": "About Button Content"
   }
 }

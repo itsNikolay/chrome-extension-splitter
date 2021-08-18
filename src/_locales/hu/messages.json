@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "ablak",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "ablakok",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Az alkalmazásról",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Visszacsatolás",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Adományoz",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Nyugodtan adományozhat egy virtuális kávét, ha élvezi ezt az alkalmazást az alábbi Donate gombbal",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Megvan, köszönöm!",
     "description": "About Button Content"
   }
 }

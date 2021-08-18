@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "બારી",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "બારીઓ",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "એપ્લિકેશન વિશે",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "પ્રતિસાદ",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "દાન કરો",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "જો તમે નીચે દાન કરો બટન સાથે આ એપ્લિકેશનનો આનંદ માણો તો કોફીનો વર્ચ્યુઅલ કપ દાન કરવા માટે નિelસંકોચ",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "મળી ગયું આભાર!",
     "description": "About Button Content"
   }
 }

@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "ikkuna",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "ikkunat",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Tietoja sovelluksesta",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Palaute",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Lahjoittaa",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Voit vapaasti lahjoittaa virtuaalisen kupin kahvia, jos nautit tästä sovelluksesta, jossa on Lahjoita -painike alla",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Selvä, kiitos!",
     "description": "About Button Content"
   }
 }

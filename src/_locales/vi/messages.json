@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "cửa sổ",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "các cửa sổ",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "Giới thiệu về ứng dụng",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "Nhận xét",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "Quyên tặng",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "Vui lòng tặng một tách cà phê ảo nếu bạn thích ứng dụng này với nút Đóng góp bên dưới",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "Hiểu rồi, cảm ơn!",
     "description": "About Button Content"
   }
 }

@@ -1,30 +1,30 @@
 {
   "window": {
-    "message": "window",
+    "message": "መስኮት",
     "description": "window"
   },
   "windows": {
-    "message": "windows",
+    "message": "መስኮቶች",
     "description": "windows"
   },
   "About": {
-    "message": "About the app",
+    "message": "ስለ መተግበሪያው",
     "description": "About"
   },
   "Feedback": {
-    "message": "Feedback",
+    "message": "ግብረመልስ",
     "description": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
+    "message": "ለግሱ",
     "description": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
+    "message": "ከዚህ በታች በስጦታ ቁልፍ በዚህ መተግበሪያ የሚደሰቱ ከሆነ ምናባዊ የቡና ጽዋ ለመለገስ ነፃነት ይሰማዎ",
     "description": "Donate"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
+    "message": "ገባኝ አመሰግናለሁ!",
     "description": "About Button Content"
   }
 }
