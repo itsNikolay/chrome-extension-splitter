@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome 窗口布局工具",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "窗户",
     "description": "window"

@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - інструмент макетування вікон Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "вікно",
     "description": "window"

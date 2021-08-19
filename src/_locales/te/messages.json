@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome విండోస్ లేఅవుట్ సాధనం",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "కిటికీ",
     "description": "window"

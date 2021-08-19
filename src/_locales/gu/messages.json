@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - ક્રોમ વિન્ડોઝ લેઆઉટ ટૂલ",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "બારી",
     "description": "window"

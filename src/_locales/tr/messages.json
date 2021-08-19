@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome pencereleri düzen aracı",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "pencere",
     "description": "window"

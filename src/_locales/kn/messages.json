@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - ಕ್ರೋಮ್ ವಿಂಡೋಸ್ ಲೇಔಟ್ ಟೂಲ್",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "ಕಿಟಕಿ",
     "description": "window"

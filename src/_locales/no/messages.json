@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - oppsettverktøyet for Chrome -vinduer",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "vindu",
     "description": "window"

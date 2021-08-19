@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome'i akende paigutuse tööriist",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "aken",
     "description": "window"

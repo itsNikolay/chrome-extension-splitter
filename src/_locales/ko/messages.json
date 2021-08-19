@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome 창 레이아웃 도구",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "창문",
     "description": "window"

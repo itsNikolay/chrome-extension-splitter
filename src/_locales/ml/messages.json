@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - ക്രോം വിൻഡോസ് ലേoutട്ട് ടൂൾ",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "ജാലകം",
     "description": "window"

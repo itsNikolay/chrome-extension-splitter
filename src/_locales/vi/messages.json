@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - công cụ bố cục cửa sổ Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "cửa sổ",
     "description": "window"

@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - l'outil de mise en page des fenêtres Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "la fenêtre",
     "description": "window"

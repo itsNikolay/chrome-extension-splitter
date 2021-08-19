@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - أداة تخطيط Chrome windows",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "نافذة او شباك",
     "description": "window"

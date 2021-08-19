@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - क्रोम विंडोज़ लेआउट टूल",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "खिड़की",
     "description": "window"

@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - Chrome -ikkunoiden asettelutyökalu",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "ikkuna",
     "description": "window"

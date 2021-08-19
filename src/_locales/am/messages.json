@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - የ Chrome መስኮቶች አቀማመጥ መሣሪያ",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "መስኮት",
     "description": "window"

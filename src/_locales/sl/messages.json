@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - orodje za postavitev oken Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "okno",
     "description": "window"

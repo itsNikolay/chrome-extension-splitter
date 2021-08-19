@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - „Chrome“ langų išdėstymo įrankis",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "langas",
     "description": "window"

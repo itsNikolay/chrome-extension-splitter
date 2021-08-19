@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - ابزار چیدمان پنجره های Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "پنجره",
     "description": "window"

@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - குரோம் விண்டோஸ் தளவமைப்பு கருவி",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "ஜன்னல்",
     "description": "window"

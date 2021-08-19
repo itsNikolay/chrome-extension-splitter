@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - το εργαλείο διάταξης των παραθύρων Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "παράθυρο",
     "description": "window"

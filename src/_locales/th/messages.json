@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - เครื่องมือจัดวางหน้าต่าง Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "หน้าต่าง",
     "description": "window"

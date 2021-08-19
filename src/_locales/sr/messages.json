@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - алатка за распоред Цхроме прозора",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "прозор",
     "description": "window"

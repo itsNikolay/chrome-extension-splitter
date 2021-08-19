@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - a Chrome ablakok elrendezési eszköze",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "ablak",
     "description": "window"

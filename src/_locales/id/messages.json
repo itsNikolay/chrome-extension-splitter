@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - alat tata letak jendela Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "jendela",
     "description": "window"

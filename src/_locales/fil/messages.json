@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - ang tool sa layout ng Chrome windows",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "bintana",
     "description": "window"

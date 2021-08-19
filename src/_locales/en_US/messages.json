@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - the Chrome windows layout tool",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "window",
     "description": "window"

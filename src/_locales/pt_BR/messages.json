@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - a ferramenta de layout de janelas do Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "janela",
     "description": "window"

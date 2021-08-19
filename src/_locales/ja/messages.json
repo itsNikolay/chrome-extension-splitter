@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter ー Chromeウィンドウレイアウトツール",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "窓",
     "description": "window"

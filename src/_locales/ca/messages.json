@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - l'eina de disseny de Windows de Chrome",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "finestra",
     "description": "window"

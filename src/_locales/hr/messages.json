@@ -1,4 +1,8 @@
 {
+  "extName": {
+    "message": "Splitter - alat za raspored Chrome prozora",
+    "description": "Extension Name"
+  },
   "window": {
     "message": "prozor",
     "description": "window"
