@@ -3,6 +3,9 @@
     "message": "Splitter ー Chromeウィンドウレイアウトツール",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "利用可能なすべてのモニタースペースを使用して、効率を最大化します。読みやすい順序でウィンドウを相互に配置します。あなたの目の前にすべての情報を持っています。不要なボタンのクリックやマウスの動きを削除します。本当に重要なことに焦点を当てる"
+  },
   "window": {
     "message": "窓",
     "description": "window"

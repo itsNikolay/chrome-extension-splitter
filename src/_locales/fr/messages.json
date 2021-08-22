@@ -3,6 +3,9 @@
     "message": "Splitter - l'outil de mise en page des fenêtres Chrome",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Utilisez tout l'espace de moniteur disponible pour maximiser votre efficacité. Placez les fenêtres les unes par rapport aux autres dans un ordre facile à lire. Ayez toutes les informations sous vos yeux. Supprimez les clics de bouton et les mouvements de souris inutiles. Concentrez-vous sur ce qui compte vraiment"
+  },
   "window": {
     "message": "la fenêtre",
     "description": "window"

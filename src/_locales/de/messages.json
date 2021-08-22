@@ -3,6 +3,9 @@
     "message": "Splitter - das Chrome-Fenster-Layout-Tool",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Nutzen Sie den gesamten verfügbaren Monitorplatz, um Ihre Effizienz zu maximieren. Platzieren Sie die Fenster in einer gut lesbaren Reihenfolge zueinander. Alle Informationen vor Augen haben. Entfernen Sie unnötige Tastenklicks und Mausbewegungen. Konzentrieren Sie sich auf das Wesentliche"
+  },
   "window": {
     "message": "Fenster",
     "description": "window"

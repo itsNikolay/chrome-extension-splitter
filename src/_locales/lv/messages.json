@@ -3,6 +3,9 @@
     "message": "Splitter - Chrome Windows izkārtojuma rīks",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Izmantojiet visu pieejamo monitora vietu, lai palielinātu efektivitāti. Novietojiet logus viens otram viegli lasāmā secībā. Turiet visu informāciju acu priekšā. Noņemiet nevajadzīgos pogu klikšķus un peles kustības. Koncentrējieties uz to, kas patiešām ir svarīgs"
+  },
   "window": {
     "message": "logs",
     "description": "window"

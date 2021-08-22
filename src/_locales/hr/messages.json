@@ -3,6 +3,9 @@
     "message": "Splitter - alat za raspored Chrome prozora",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Iskoristite sav raspoloživi prostor na monitoru kako biste povećali svoju učinkovitost. Postavite prozore jedan prema drugom u nizu koji se lako čita. Imajte sve informacije pred očima. Uklonite nepotrebne pritiske gumba i pokrete miša. Usredotočite se na ono što je doista važno"
+  },
   "window": {
     "message": "prozor",
     "description": "window"

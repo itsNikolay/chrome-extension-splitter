@@ -3,6 +3,9 @@
     "message": "Splitter — narzędzie do tworzenia układu systemu Windows w Chrome",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Wykorzystaj całą dostępną przestrzeń na monitor, aby zmaksymalizować wydajność. Umieść okna obok siebie w czytelnej kolejności. Miej wszystkie informacje przed oczami. Usuń niepotrzebne kliknięcia przycisków i ruchy myszy. Skoncentruj się na tym, co naprawdę ma znaczenie"
+  },
   "window": {
     "message": "okno",
     "description": "window"

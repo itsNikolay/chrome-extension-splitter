@@ -3,6 +3,9 @@
     "message": "Splitter - a Chrome ablakok elrendezési eszköze",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Használja ki az összes rendelkezésre álló monitorterületet a hatékonyság maximalizálása érdekében. Helyezze az ablakokat egymáshoz könnyen olvasható sorrendben. Legyen minden információ a szeme előtt. Távolítsa el a felesleges gombnyomásokat és az egérmozdulatokat. Fókuszáljon arra, ami igazán fontos"
+  },
   "window": {
     "message": "ablak",
     "description": "window"

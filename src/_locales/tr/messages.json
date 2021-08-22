@@ -3,6 +3,9 @@
     "message": "Splitter - Chrome pencereleri düzen aracı",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Verimliliğinizi en üst düzeye çıkarmak için mevcut tüm monitör alanını kullanın. Pencereleri okunması kolay bir sırayla birbirine yerleştirin. Tüm bilgiler gözünüzün önünde olsun. Gereksiz düğme tıklamalarını ve fare hareketlerini kaldırın. Gerçekten önemli olana odaklanın"
+  },
   "window": {
     "message": "pencere",
     "description": "window"

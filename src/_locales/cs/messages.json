@@ -3,6 +3,9 @@
     "message": "Splitter - nástroj pro rozložení oken Chrome",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Využijte veškerý dostupný prostor pro monitorování, abyste maximalizovali svoji efektivitu. Umístěte okna k sobě ve snadno čitelném pořadí. Mějte všechny informace před očima. Odstraňte zbytečná kliknutí na tlačítka a pohyby myši. Soustřeďte se na to, na čem opravdu záleží"
+  },
   "window": {
     "message": "okno",
     "description": "window"

@@ -3,6 +3,9 @@
     "message": "Splitter - Chrome 窗口布局工具",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "使用所有可用的顯示器空間來最大限度地提高效率。以易於閱讀的順序將窗戶相互放置。將所有信息都呈現在您的眼前。刪除不必要的按鈕點擊和鼠標移動。專注於真正重要的事情"
+  },
   "window": {
     "message": "窗户",
     "description": "window"

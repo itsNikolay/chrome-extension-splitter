@@ -3,6 +3,9 @@
     "message": "Splitter - instrumentul de amenajare a ferestrelor Chrome",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Folosiți tot spațiul disponibil pentru monitor pentru a vă maximiza eficiența. Așezați ferestrele unul față de altul într-o secvență ușor de citit. Aveți toate informațiile în fața ochilor. Eliminați clicurile butonului și mișcările mouse-ului inutile. Concentrați-vă pe ceea ce contează cu adevărat"
+  },
   "window": {
     "message": "fereastră",
     "description": "window"

@@ -3,6 +3,9 @@
     "message": "Splitter - zana ya upangilio wa windows windows",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Tumia nafasi zote za kufuatilia ili kuongeza ufanisi wako. Weka madirisha kwa kila mmoja kwa mlolongo rahisi kusoma. Kuwa na habari zote mbele ya macho yako. Ondoa mibofyo isiyo ya lazima na harakati za panya. Zingatia yale ambayo ni muhimu sana"
+  },
   "window": {
     "message": "dirisha",
     "description": "window"

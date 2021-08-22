@@ -3,6 +3,9 @@
     "message": "Splitter - Chrome -ikkunoiden asettelutyökalu",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Maksimoi tehokkuus käyttämällä koko käytettävissä olevaa näyttötilaa. Aseta ikkunat toisiinsa helposti luettavassa järjestyksessä. Pidä kaikki tiedot silmiesi edessä. Poista tarpeettomat painikkeiden napsautukset ja hiiren liikkeet. Keskity siihen, mikä on todella tärkeää"
+  },
   "window": {
     "message": "ikkuna",
     "description": "window"

@@ -3,6 +3,9 @@
     "message": "Splitter - værktøjet til layout af Chrome -vinduer",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Brug al den tilgængelige skærmplads til at maksimere din effektivitet. Placer vinduerne til hinanden i en letlæselig sekvens. Hav alle oplysninger for øjnene. Fjern unødvendige klik og musebevægelser. Fokuser på det, der virkelig betyder noget"
+  },
   "window": {
     "message": "vindue",
     "description": "window"

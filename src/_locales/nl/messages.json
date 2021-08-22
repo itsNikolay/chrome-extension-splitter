@@ -3,6 +3,9 @@
     "message": "Splitter - de lay-outtool voor Chrome-vensters",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Gebruik alle beschikbare monitorruimte om uw efficiëntie te maximaliseren. Plaats de vensters in een gemakkelijk leesbare volgorde naast elkaar. Houd alle informatie voor uw ogen. Verwijder onnodige knopklikken en muisbewegingen. Focus op wat er echt toe doet"
+  },
   "window": {
     "message": "raam",
     "description": "window"

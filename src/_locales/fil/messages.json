@@ -3,6 +3,9 @@
     "message": "Splitter - ang tool sa layout ng Chrome windows",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Gamitin ang lahat ng magagamit na espasyo ng monitor upang ma-maximize ang iyong kahusayan. Ilagay ang mga bintana sa bawat isa sa isang madaling basahin na pagkakasunud-sunod. Mayroon ang lahat ng impormasyon sa harap ng iyong mga mata. Alisin ang mga hindi kinakailangang pag-click sa pindutan at paggalaw ng mouse. Ituon ang totoong mahalaga"
+  },
   "window": {
     "message": "bintana",
     "description": "window"

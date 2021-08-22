@@ -3,6 +3,9 @@
     "message": "Splitter - la herramienta de diseño de ventanas de Chrome",
     "description": "Extension Name"
   },
+  "extDescription": {
+    "message": "Utilice todo el espacio disponible en el monitor para maximizar su eficiencia. Coloque las ventanas entre sí en una secuencia fácil de leer. Ten toda la información ante tus ojos. Elimine los clics de botones y los movimientos del mouse innecesarios. Concéntrate en lo que realmente importa"
+  },
   "window": {
     "message": "ventana",
     "description": "window"
