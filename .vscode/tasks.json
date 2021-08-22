@@ -52,6 +52,28 @@
       ],
       "label": "npm: locale",
       "detail": "generate locales"
+    },
+    {
+      "type": "npm",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "script": "zip",
+      "problemMatcher": [
+        "$eslint-compact"
+      ],
+      "label": "npm: zip",
+      "detail": "create zip archieve"
+    },
+    {
+      "label": "Release",
+      "dependsOrder": "sequence",
+      "dependsOn": ["npm: build", "npm: zip"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
     }
   ]
 }
