@@ -13,7 +13,7 @@ const Run = async () => {
   forEachLanguage(async ([language]) => {
     const messagesPath = createMessagesFiles(language);
     const existingMessagesData = await readData(messagesPath);
-    const newData = createData(
+    const newData = await createData(
       language,
       baseMessagesData,
       existingMessagesData
