@@ -1,7 +1,9 @@
 {
   "extName": {
-    "message": "Splitter - the Chrome windows layout tool",
-    "description": "Extension Name"
+    "message": "Splitter - the windows layout tool for Google Chrome™"
+  },
+  "extDescription": {
+    "message": "Place the windows to each other for ease of reading and maximize your reading efficiency."
   },
   "window": {
     "message": "window",

@@ -1,7 +1,9 @@
 {
   "extName": {
-    "message": "Splitter - la herramienta de diseño de ventanas de Chrome",
-    "description": "Extension Name"
+    "message": "Splitter - la herramienta de diseño de Windows para Google Chrome™"
+  },
+  "extDescription": {
+    "message": "Coloque las ventanas entre sí para facilitar la lectura y maximizar su eficiencia de lectura."
   },
   "window": {
     "message": "ventana",

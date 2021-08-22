@@ -4,9 +4,14 @@ const processMessage = (key, mesage) => {
   let message = mesage;
   if (key === "extName") {
     message = `Splitter - ${message}`;
-    message = message.replace("Google Chrome", "Google Chrome™");
+    message = message.replace("Chrome", "Chrome™");
   }
   return message;
+};
+
+const processLanguage = (language) => {
+  const [firstPart] = language.split("_");
+  return firstPart;
 };
 
 const createData = async (language, baseMessagesData, existingMessagesData) => {
@@ -15,8 +20,8 @@ const createData = async (language, baseMessagesData, existingMessagesData) => {
   for (let [key] of Object.entries(baseMessagesData)) {
     if (!data[key] || baseMessagesData[key].force) {
       const text = baseMessagesData[key].message;
-      console.log(text, language);
-      const [translatedMessage] = await translateText(text, language);
+      const lang = processLanguage(language);
+      const [translatedMessage] = await translateText(text, lang);
       data[key] = baseMessagesData[key];
       let message = processMessage(key, translatedMessage);
       data[key].message = message;
