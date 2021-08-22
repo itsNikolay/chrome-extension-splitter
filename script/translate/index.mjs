@@ -1,11 +1,7 @@
-import { getBaseMessagesPath } from "../translate/pathes.js";
-import { createData } from "../translate/data.js";
-import { forEachLanguage } from "../translate/languages.js";
-import {
-  writeDataToFile,
-  createMessagesFiles,
-  readData,
-} from "../translate/files.js";
+import { getBaseMessagesPath } from "./pathes.js";
+import { createData } from "./data.js";
+import { forEachLanguage } from "./languages.js";
+import { writeDataToFile, createMessagesFiles, readData } from "./files.js";
 
 const Run = async () => {
   const baseMessagesPath = getBaseMessagesPath();
