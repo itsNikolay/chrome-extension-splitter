@@ -1,6 +1,7 @@
 {
   "extName": {
-    "message": "the windows layout tool for Google Chrome"
+    "message": "the window layout tool",
+    "force": "true"
   },
   "extDescription": {
     "message": "Place the windows to each other for ease of reading and maximize your reading efficiency."

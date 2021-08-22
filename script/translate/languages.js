@@ -57,4 +57,9 @@ const languages = {
 
 const forEachLanguage = (fn) => Object.entries(languages).forEach(fn);
 
-export { forEachLanguage };
+const getLanguagePart = ({ language }) => {
+  const [firstPart] = language.split("_");
+  return firstPart;
+};
+
+export { forEachLanguage, getLanguagePart };

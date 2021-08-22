@@ -1,18 +1,5 @@
-import { translateText } from "../translate/testtr.js";
-
-const processMessage = (key, mesage) => {
-  let message = mesage;
-  if (key === "extName") {
-    message = `Splitter - ${message}`;
-    message = message.replace("Chrome", "Chrome™");
-  }
-  return message;
-};
-
-const processLanguage = (language) => {
-  const [firstPart] = language.split("_");
-  return firstPart;
-};
+import { getLanguagePart } from "../translate/languages.js";
+import { getMessage } from "../translate/message.js";
 
 const createData = async (language, baseMessagesData, existingMessagesData) => {
   let data = { ...existingMessagesData };
@@ -20,11 +7,10 @@ const createData = async (language, baseMessagesData, existingMessagesData) => {
   for (let [key] of Object.entries(baseMessagesData)) {
     if (!data[key] || baseMessagesData[key].force) {
       const text = baseMessagesData[key].message;
-      const lang = processLanguage(language);
-      const [translatedMessage] = await translateText(text, lang);
-      data[key] = baseMessagesData[key];
-      let message = processMessage(key, translatedMessage);
-      data[key].message = message;
+      const lang = getLanguagePart({ language });
+      const message = await getMessage({ text, lang, key });
+
+      data[key] = { ...baseMessagesData[key], message };
     }
     delete data[key].force;
   }
