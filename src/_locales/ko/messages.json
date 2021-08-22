@@ -1,7 +1,6 @@
 {
   "extName": {
-    "message": "Splitter - Chrome 창 레이아웃 도구",
-    "description": "Extension Name"
+    "message": "Splitter - Chrome용 Windows 레이아웃 도구"
   },
   "extDescription": {
     "message": "사용 가능한 모든 모니터 공간을 사용하여 효율성을 극대화하십시오. 읽기 쉬운 순서로 창을 서로 배치하십시오. 모든 정보가 눈앞에 있습니다. 불필요한 버튼 클릭과 마우스 움직임을 제거하십시오. 정말 중요한 것에 집중하라"

@@ -20,9 +20,6 @@ const Run = async () => {
     );
     await writeDataToFile(messagesPath, newData);
   });
-  Object.entries(baseMessagesData).forEach(([key, value]) => {
-    console.log(value.message, "\n");
-  });
 };
 
 Run();

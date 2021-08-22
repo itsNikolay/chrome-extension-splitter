@@ -1,37 +1,30 @@
 {
   "extName": {
-    "message": "Splitter: the Chrome windows layout tool",
-    "description": "Extension Name"
+    "message": "the windows layout tool for Google Chrome",
+    "force": "true"
   },
   "extDescription": {
     "message": "Use all the available monitor space to maximize your efficiency. Place the windows to each other in an easy-to-read sequence. Have all the information before your eyes. Remove unnecessary button clicks and mouse movements. Focus on what really matters"
   },
   "window": {
-    "message": "window",
-    "description": "window"
+    "message": "window"
   },
   "windows": {
-    "message": "windows",
-    "description": "windows"
+    "message": "windows"
   },
   "About": {
-    "message": "About the app",
-    "description": "About"
+    "message": "About the app"
   },
   "Feedback": {
-    "message": "Feedback",
-    "description": "Feedback"
+    "message": "Feedback"
   },
   "Donate": {
-    "message": "Donate",
-    "description": "Donate"
+    "message": "Donate"
   },
   "About_Message_1": {
-    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below",
-    "description": "Donate"
+    "message": "Feel free to donate a virtual cup of coffee if you enjoy this app with Donate button below"
   },
   "About_Button": {
-    "message": "Got it, thanks!",
-    "description": "About Button Content"
+    "message": "Got it, thanks!"
   }
 }
