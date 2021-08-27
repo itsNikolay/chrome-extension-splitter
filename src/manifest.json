@@ -4,7 +4,7 @@
   "description": "__MSG_extDescription__",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["tabs"],
+  "permissions": [],
   "action": {
     "default_popup": "popup.html"
   },
