@@ -67,9 +67,16 @@
       "detail": "create zip archieve"
     },
     {
+      "label": "Remove dist.zip",
+      "type": "shell",
+      "command": "rm -f dist.zip",
+      "problemMatcher": []
+    },
+    {
       "label": "Release",
+      "detail": "Make a release",
       "dependsOrder": "sequence",
-      "dependsOn": ["npm: build", "npm: zip"],
+      "dependsOn": ["npm: build", "Remove dist.zip", "npm: zip"],
       "group": {
         "kind": "build",
         "isDefault": true
