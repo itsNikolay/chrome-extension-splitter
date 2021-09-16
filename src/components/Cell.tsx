@@ -17,23 +17,31 @@ interface Props {
 }
 
 const Cell = ({ columns }: Props) => {
+  const [hovered, setHovered] = useState(false)
+
   return (
     <button
       onClick={() => onClick(columns)}
-      className="transitions-colors duration-500 hover:bg-blue-100"
+      className={`transitions-colors duration-500`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div className="h-12 grid grid-cols-12 gap-2">
-        {columns.map((column, index) => (
-          <div
-            key={index}
-            className={
-              `border
-                  ${column.type === 'filled' ? 'border-blue-500' : 'border-grey'}
+        {columns.map((column, index) => {
+          const isFilled = column.type === 'filled'
+          const isHoled = column.type === 'holed'
+          return (
+            <div
+              key={index}
+              className={`border
+                  ${isFilled ? 'border-layout-main' : 'border-layout-stroke'}
+                  ${isFilled && hovered ? 'bg-layout-main' : ''}
+                  ${isHoled && hovered ? 'bg-layout-inactive' : ''}
                   col-span-${column.cols}
-                  transition-all`
-            }
-          ></div>
-        ))}
+                  transition-all`}
+            ></div>
+          )
+        })}
       </div>
     </button>
   )

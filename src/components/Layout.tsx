@@ -8,10 +8,10 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => (
-  <div className="container mx-auto w-96 p-5">
+  <div className="container mx-auto w-96 p-5 bg-layout-background">
     <Title />
     <Navbar />
-    <div className="overflow-scroll h-96 shadow-inner">
+    <div className="mt-5 overflow-x-hidden overflow-y-scroll h-96 shadow-inner">
       {children}
     </div>
     <FooterButtons />
