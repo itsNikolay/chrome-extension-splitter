@@ -33,7 +33,7 @@ const Cell = ({ columns }: Props) => {
           return (
             <div
               key={index}
-              className={`border
+              className={`border-2 rounded
                   ${isFilled ? 'border-layout-main' : 'border-layout-stroke'}
                   ${isFilled && hovered ? 'bg-layout-main' : ''}
                   ${isHoled && hovered ? 'bg-layout-inactive' : ''}

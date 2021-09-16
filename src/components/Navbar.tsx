@@ -18,7 +18,7 @@ const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) =
     activeClassName="bg-layout-important"
     className="hover:bg-layout-main transition-colors duration-500 bg-layout-inactive"
   >
-    <div className="py-3 text-center">
+    <div className="flex flex-col gap-1 py-3 text-center">
       <div className="flex gap-2 items-center justify-center text-center">
         <div className="text-layout-white text-4xl">
           {name}
@@ -36,7 +36,7 @@ const NavWrapper = ({ to, name }: { to: string, name: string | ReactElement }) =
 )
 
 const Navbar = () => (
-  <div className="grid grid-cols-auto grid-flow-col gap-2 mt-2">
+  <div className="grid grid-cols-auto grid-flow-col gap-2 mt-2 grid-cols-4">
     <NavWrapper to={ROOT_PATH} name="1" />
     <NavWrapper to={TWO_COLUMNS_PATH} name="2" />
     <NavWrapper to={THREE_COLUMNS_PATH} name="3" />
