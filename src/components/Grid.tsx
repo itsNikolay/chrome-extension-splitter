@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Grid = ({ columnTypes }: Props) => (
-  <div className="grid grid-row-3 gap-5">
+  <div className="grid grid-row-3 gap-3">
     {Object.entries(columnTypes).map(([key, columns]) => (
       <Cell key={key} columns={columns} />
     ))}

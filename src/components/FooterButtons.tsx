@@ -9,7 +9,7 @@ const FooterButtons = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="bg-layout-inactive flex gap-5 items-center justify-around mt-5 p-4">
+    <div className="bg-layout-inactive flex gap-5 items-center justify-around p-4">
       <div className="text-center">
         <button onClick={() => setIsOpen(true)} className="block" >
           <div className="flex gap-2 items-center justify-center hover:text-layout-white">
