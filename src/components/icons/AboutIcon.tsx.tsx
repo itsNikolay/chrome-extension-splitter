@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutIcon = () => {
   return (
-    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="25" height="25" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="9" cy="10" r="9" fill="#7F7FE6" />
       <circle cx="9" cy="10" r="7" fill="white" />
       <circle cx="9" cy="10" r="5" fill="#7F7FE6" />
