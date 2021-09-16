@@ -9,13 +9,13 @@ const FooterButtons = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="bg-layout-inactive flex gap-5 items-center justify-center mt-5 py-4">
+    <div className="bg-layout-inactive flex gap-5 items-center justify-center mt-5 p-4">
       <div className="text-center">
         <button onClick={() => setIsOpen(true)} className="block" >
           <div className="flex gap-2 items-center justify-center hover:text-layout-white">
             <AboutIcon />
-            <div className="text-layout-main uppercase font-bold text-sm transition-colors hover:text-layout-white">
-              {getMessage('About')}
+            <div className="font-bold hover:text-layout-white text-layout-main text-xs transition-colors truncate uppercase">
+              {getMessage('About').split(' ')[0]}
             </div>
           </div>
         </button>
@@ -29,8 +29,8 @@ const FooterButtons = () => {
           className="flex gap-2 items-center justify-center  transition-colors hover:text-layout-white"
         >
           <FeedbackIcon />
-          <div className="text-layout-main uppercase font-bold text-sm  transition-colors hover:text-layout-white">
-            {getMessage('Feedback')}
+          <div className="font-bold hover:text-layout-white text-layout-main text-xs transition-colors truncate uppercase">
+            {getMessage('Feedback').split(' ')[0]}
           </div>
         </a>
       </div>
@@ -42,8 +42,8 @@ const FooterButtons = () => {
           className="flex gap-2 items-center justify-center  transition-colors hover:text-layout-white"
         >
           <DonateIcon />
-          <div className="text-layout-main uppercase font-bold text-sm  transition-colors hover:text-layout-white">
-            {getMessage('Donate')}
+          <div className="font-bold hover:text-layout-white text-layout-main text-xs transition-colors truncate uppercase">
+            {getMessage('Donate').split(' ')[0]}
           </div>
         </a>
       </div>
