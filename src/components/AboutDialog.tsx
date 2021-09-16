@@ -34,15 +34,15 @@ const AboutDialog = ({ isOpen, setIsOpen }: Props) => (
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-layout-background shadow-xl rounded-2xl">
               <Dialog.Title
                 as="h3"
-                className="text-lg font-medium leading-6 text-gray-900"
+                className="text-lg font-medium leading-6 text-layout-white"
               >
                 {getMessage('About')}
               </Dialog.Title>
               <div className="mt-2">
-                <div className="text-sm text-gray-500">
+                <div className="text-sm text-layout-white">
                   <div>
                     {getMessage('About_Message_1')}
                   </div>
@@ -52,7 +52,7 @@ const AboutDialog = ({ isOpen, setIsOpen }: Props) => (
               <div className="mt-4">
                 <button
                   type="button"
-                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                  className="inline-flex justify-center px-4 py-2 text-sm font-medium bg-layout-main text-layout-white border border-transparent rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                   onClick={() => setIsOpen(false)}
                 >
                   {getMessage('About_Button')}
