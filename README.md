@@ -27,3 +27,11 @@ npm release
 ```
 
 1. Go to develops console and upload `dist.zip`
+
+## Self Promotion
+
+Developers:
+
+- itsnikolay (<https://nponomarev.com>)
+
+Give the repo a ⭐ if you ❤️ it. Install and try
